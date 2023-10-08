@@ -69,11 +69,6 @@ const Login: React.FC = () => {
   };
   return (
     <div className={containerClassName}>
-      <Helmet>
-        <title>
-          {'登录'}- {Settings.title}
-        </title>
-      </Helmet>
       <div
         style={{
           backgroundColor: 'white',
@@ -144,12 +139,9 @@ const Login: React.FC = () => {
             }}
           >
             <ProFormText>
-              <Link to={'/user/register'}>
-                点此注册👈
-              </Link>
               <a
                 style={{
-                  float: 'right',
+                  float: 'left',
                 }}
                 onClick={()=>{
                   alert('请联系管理员，邮箱地址614993516@qq.com')
@@ -157,6 +149,14 @@ const Login: React.FC = () => {
               >
                 忘记密码?
               </a>
+              <Link
+                to={'/user/register'}
+                style={{
+                  float: 'right',
+                }}
+              >
+                点此注册👉
+              </Link>
             </ProFormText>
 
           </div>

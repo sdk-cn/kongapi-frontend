@@ -17,7 +17,7 @@ const Settings: ProLayoutProps & {
   colorWeak: false,
   title: 'Kong API',
   pwa: true,
-  logo: 'logo.svg',
+  logo: 'https://img.moral-winner.cn/img/logo.png',
   iconfontUrl: '',
   pageTitleRender:false,
   token: {
